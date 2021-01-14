@@ -27,7 +27,7 @@ Other things to include:
 
 **Screenshot**: If the software has visual components, place a screenshot after the description; e.g.,
 
-![](./assets/repo.png)
+![](./assets/server_docs.png)
 
 
 ## Dependencies
