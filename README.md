@@ -32,6 +32,7 @@ Other things to include:
 
 - Python 3.x
 - Pipenv, Virtualenv
+- [Uvicorn](https://www.uvicorn.org/)
 
 ## Installation
 
@@ -89,7 +90,7 @@ Create .env file and add the following
 ```
 S_HOST = 127.0.0.1 # default 127.0.0.1
 S_PORT = 5000 # default 5000 
-S_LOG_LEVEL = info # default info [info|debug]
+S_LOG_LEVEL = info # default info [critical|error|warning|info|debug|trace]
 ```
 
 ## How to test the software
