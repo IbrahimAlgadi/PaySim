@@ -84,7 +84,6 @@ the Api Documentation where you can start making requests and play with
 it
 ![](./assets/server_docs.png)
 
-
 ###### Server Environment Config
 
 Create .env file and add the following
