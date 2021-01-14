@@ -62,11 +62,11 @@ In the PaySim the response will be like
 ![](./assets/getUrl__response.png)
 
 - then you send the (http://localhost:5000/syberpay/payment/30348ce0-a492-41cb-a00a-1cfece733212) to the 
-customer 
-- or in production you send the SyberPay one 
+customer who want to pay
+- when working in production you send the SyberPay one 
 (https://www.sybertechnology.com/syberpay/payment/1593135f-4110-4edc-bbd0-ebe134968498)
-this url is only valid for 10 minutes as specified by SyberPay docs
-- in our simulation environment i haven't implemented expiry yet
+this url is only valid for 10 minutes as specified by SyberPay docs 
+**in our simulation environment i haven't implemented expiry yet**
 
 4 - Then the customer will access the URL it will appear like this Ugly Page :)
 then the customer will write his info and press Enter
