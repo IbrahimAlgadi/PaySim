@@ -116,14 +116,24 @@ Still under development.
   - 1 - Creating simple payment simulator
 
 * V 0.2
-  - 2 - Creating simulator with fixed card numbers and card checking
-  - 3 - Implementing All sorts of error responses regarding card credit 
+  - 1 - Creating simulator with fixed card numbers and card checking
+  - 2 - Implementing All sorts of error responses regarding card credit 
   and so
 
 V 0.3
-  - 4 - Creating a full fledged payment simulator with a UI configuration settings 
+  - 1 - Creating a full fledged payment simulator with a UI configuration settings 
   for easing the use of the 
 
+For some time I am planning to create another implementation with another 
+environment so you need not only to install Python to work, I am planning to
+implement it in **JavaScript (NodeJS)**, **Go**, **PHP (Laravel)**, **Ruby**
+... etc
+
+if you are interested and you want to update and add the other 
+implementation you can contribute and start adding the logic
+
+we can change the folder structure to accommodate other programming languages as
+well
 
 ## Getting help
 
