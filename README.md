@@ -11,10 +11,16 @@ help you setup the basic routes for your payment, and then go to
 them for linking and you have a full fledged backend, that performs
 well with which ever payment gateway of your choice.
 
-This project is for student's as well who want to add payment logic
+> This project is for:
+
+- **Student's** as well who want to add payment logic
 to their projects and have no chance to go through the complicated
 protocols of going to the Provider and ask for keys. when all you 
 want is just a payment gateway that gives you a response.
+
+- **Developers** who want to implement the logic prior to production
+and then implement their testing based on the responses they get to 
+decide which payment gateway they will start working with.
 
  
 
