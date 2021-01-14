@@ -84,7 +84,6 @@ the Api Documentation where you can start making requests and play with
 it
 ![](./assets/server_docs.png)
 
-
 ###### Server Environment Config
 
 Create .env file and add the following
@@ -144,3 +143,7 @@ project and he wanted to link it with an online payment, but his
 teacher told him it is hard and you can't do it, because there is 
 no easy way to do it, unless going directly to the provider. So i
 decided to help him as well.
+
+
+## Sponsored by 
+- **Power Of Space**
