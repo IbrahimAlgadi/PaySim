@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Syber Pay Invoice</title>
+</head>
+<body>
+
+<h3>11.00 SDG</h3>
+
+<form method="post" action="/syberpay/payment/{{ transactionId }}">
+
+    <p>
+        PAN <input type="text" placeholder="PAN">
+    </p>
+
+    <p>
+        Exp.Date <input type="text" placeholder="Exp.Date">
+    </p>
+
+    <p>
+        PIN <input type="text" placeholder="PIN">
+    </p>
+
+
+    <p>
+        EMAIL <input type="email" placeholder="EMAIL">
+    </p>
+
+    <p>
+        <button>Pay 11.00 SDG</button>
+        <button>Cancel</button>
+    </p>
+
+</form>
+
+</body>
+</html>

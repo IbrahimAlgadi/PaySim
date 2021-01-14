@@ -1,0 +1,82 @@
+Req: https://[SYBERPAY_URI]/getUrl
+
+{
+    "applicationId":"0010010001",
+    "payeeId":"0010010009",
+    "serviceId":"001001000901",
+    "customerRef":"628db23f",
+    "currency":"SDG",
+    "amount":100.0,
+    "paymentInfo":
+    {
+        "accountNo":"123456",
+        "customerName":"Mohammed Ahmed",
+        "serviceType":"123"
+    },
+    “hash”: “e1280edbe5bf00c237e6b724d63f0ddab2e48b1ee3b5db7573b59f293cae655a”
+
+}
+
+
+Resp:
+
+{
+
+    "applicationId":"0010010001",
+    "payeeId":"0010010009",
+    "serviceId":"001001000901",
+    "amount":100.0,
+    "currency":"SDG",
+    "customerRef":"628db23f",
+    "tranTimestamp":"2015-08-13,10:04:58",
+    "paymentInfo":
+    {
+        "accountNo":"123456",
+        "customerName":"Mohammed Ahmed",
+        "serviceType":"123",
+    },
+    "responseCode":1,
+    "responseMessage":"Approved",
+    "paymentUrl":"https://www.sybertechnology.com/syberpay/payment/1593135f-4110-4edc-bbd0-ebe134968498"
+
+}
+
+
+
+------------------------------------------------------------------------------
+Req: https://[SYBERPAY_URI]/payment_status
+
+{
+    "applicationId":"0010010001",
+    "transactionId":"1593135f-4110-4edc-bbd0-ebe134968498",
+    “hash”: “e1280edbe5bf00c237e6b724d63f0ddab2e48b1ee3b5db7573b59f293cae655a”
+}
+
+Resp:
+
+{
+    “status” : “Successful”,
+    "responseCode":1, // anything else the thing has fallen so say transaction didn't go through
+    "responseMessage":"Approved",
+    “payment” : {
+        "applicationId":"0010010001",
+        "payeeId":"0010010009",
+        "serviceId":"001001000901",
+        "amount":100.0,
+        "currency":"SDG",
+        "customerRef":"628db23f",
+        "tranTimestamp":"2015-08-13,10:04:58",
+        "paymentInfo": {
+            "accountNo":"123456",
+            "customerName":"Mohammed Ahmed",
+            "serviceType":"123",
+        },
+        “responseData” : {
+            “receiptNo” : “972XY30”
+        },
+        "responseCode": 0,
+        "responseMessage": "Approved",
+        "status": “Successful”
+    }
+}
+
