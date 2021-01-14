@@ -84,6 +84,9 @@ the Api Documentation where you can start making requests and play with
 it
 ![](./assets/server_docs.png)
 
+### SyberPay payment steps
+you can find it in [PaySim SyberPay](./SyberPay.md)
+
 ###### Server Environment Config
 
 Create .env file and add the following
