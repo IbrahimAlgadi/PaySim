@@ -31,7 +31,7 @@ Other things to include:
   - **Status**:  V 1.0 this is the first release and the first commit 
   still under testing.
 
-**Screenshot**: If the software has visual components, place a screenshot after the description; e.g.,
+**Screenshot**: 
 
 ![](./assets/server_docs.png)
 
