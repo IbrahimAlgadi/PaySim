@@ -109,6 +109,22 @@ Testing instruction will be attached soon
 
 Still under development.
 
+
+## Roead Map
+
+* V 0.1
+  - 1 - Creating simple payment simulator
+
+* V 0.2
+  - 2 - Creating simulator with fixed card numbers and card checking
+  - 3 - Implementing All sorts of error responses regarding card credit 
+  and so
+
+V 0.3
+  - 4 - Creating a full fledged payment simulator with a UI configuration settings 
+  for easing the use of the 
+
+
 ## Getting help
 
 Contact 
