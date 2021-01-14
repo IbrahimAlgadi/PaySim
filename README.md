@@ -126,8 +126,8 @@ Still under development.
 
 For some time I am planning to create another implementation with another 
 environment so you need not only to install Python to work, I am planning to
-implement it in **JavaScript (NodeJS)**, **Go**, **PHP (Laravel)**, **Ruby**
-... etc
+implement it in **JavaScript (NodeJS)**, **Go**, **PHP (Laravel)**, **Ruby**, 
+**.Net** ... etc
 
 if you are interested and you want to update and add the other 
 implementation you can contribute and start adding the logic
