@@ -120,9 +120,9 @@ Still under development.
   - 2 - Implementing All sorts of error responses regarding card credit 
   and so
 
-V 0.3
+* V 0.3
   - 1 - Creating a full fledged payment simulator with a UI configuration settings 
-  for easing the use of the 
+  for easing the use of the simulated payment system
 
 For some time I am planning to create another implementation with another 
 environment so you need not only to install Python to work, I am planning to
