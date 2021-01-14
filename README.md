@@ -53,9 +53,9 @@ pip install -r requirements.txt
 
 ## Configuration
 
-Still cooking it, but for your record in the futures it will 
+Still cooking it, but for your record in the future it will 
 be as simple as
-- for [SyberPay](https://www.syberpay.com/)
+- for [SyberPay](https://www.syberpay.com/) checkout [PaySim SyberPay How To.](./SyberPay.md)
 ```
 python run.py syber
 
@@ -83,6 +83,7 @@ you can view server docs by going to
 the Api Documentation where you can start making requests and play with 
 it
 ![](./assets/server_docs.png)
+
 
 ###### Server Environment Config
 
