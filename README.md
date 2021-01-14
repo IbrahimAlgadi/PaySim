@@ -77,6 +77,21 @@ this will run a uvicorn instance that will open for you the fastapi
 
 ![](./assets/server_running.png)
 
+you can view server docs by going to 
+[http://localhost:5000/docs](http://localhost:5000/docs) will show you
+the Api Documentation where you can start making requests and play with 
+it
+![](./assets/server_docs.png)
+
+###### Server Environment Config
+
+Create .env file and add the following
+```
+S_HOST = 127.0.0.1 # default 127.0.0.1
+S_PORT = 5000 # default 5000 
+S_LOG_LEVEL = info # default info [info|debug]
+```
+
 ## How to test the software
 
 Testing instruction will be attached soon

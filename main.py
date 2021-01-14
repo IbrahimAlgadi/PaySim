@@ -6,6 +6,9 @@ from models import *
 import datetime
 import uuid
 from faker import Faker
+from decouple import config
+
+BASE_URL = f"http://{config('S_HOST', default='127.0.0.1')}:{config('S_PORT', default=5000, cast=int)}"
 
 # import requests
 
@@ -40,7 +43,7 @@ async def get_url(paymentRequest: PaymentRequest):
             },
         "responseCode": 1,
         "responseMessage": "Approved",
-        "paymentUrl": f"http://localhost:5000/syberpay/payment/{transaction_id}"
+        "paymentUrl": f"{BASE_URL}/syberpay/payment/{transaction_id}"
 
     })
     storage[f"{transaction_id}"] = {"payment": initial_payment, "payment_status": False}

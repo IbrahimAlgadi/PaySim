@@ -10,6 +10,7 @@ requests = "*"
 faker = "*"
 jinja2 = "*"
 aiofiles = "*"
+python-decouple = "*"
 
 [dev-packages]
 
