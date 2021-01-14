@@ -18,10 +18,10 @@ want is just a payment gateway that gives you a response.
 
 Other things to include:
 
-  - **Technology stack**: This project is based on python FastApi.
-  - **Status**:  V 1.0 this is the first release and the first commit still under 
-  testing.
-
+  - **Technology stack**: This project is based on python 
+  [FastApi](https://fastapi.tiangolo.com/).
+  - **Status**:  V 1.0 this is the first release and the first commit 
+  still under testing.
 
 **Screenshot**: If the software has visual components, place a screenshot after the description; e.g.,
 
@@ -74,6 +74,8 @@ run the following
 python run.py
 ```
 this will run a uvicorn instance that will open for you the fastapi
+
+![](./assets/server_running.png)
 
 ## How to test the software
 
