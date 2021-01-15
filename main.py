@@ -5,6 +5,8 @@ from fastapi.templating import Jinja2Templates
 from models import *
 import datetime
 import uuid
+import requests
+from requests.exceptions import RequestException as ReqConErr
 from faker import Faker
 from decouple import config
 
@@ -112,8 +114,15 @@ async def cusomer_pay(request: Request, transactionId: str):
 @app.post('/syberpay/payment/{transactionId}')
 async def cusomer_pay(request: Request, transactionId: str):
     storage[f"{transactionId}"]["payment_status"] = True
-    print("Customer Paid successfully ... done some action, this hook that tell you what has happened in syberpay")
-    return {"STATUS": "SUCCESS"}
+    print(storage)
+    try:
+        rq = requests.post('localhost:8000/syber/hook/event/', json={
+            'transactionId': transactionId
+        })
+    except ReqConErr:
+        return {'transactionId': transactionId}
+    # print("Customer Paid successfully ... done some action, this hook that tell you what has happened in syberpay")
+    return {'transactionId': transactionId}
 
 
 # when customer pay call my server hook
