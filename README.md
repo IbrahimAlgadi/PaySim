@@ -6,7 +6,7 @@
 systems in Sudan, when you want to link you have to go physically
 and ask for their keys or whatever.
 
-but with **PySim** you can have a simulated environment that can
+but with **PaySim** you can have a simulated environment that can
 help you setup the basic routes for your payment, and then go to
 them for linking and you have a full fledged backend, that performs
 well with which ever payment gateway of your choice.
