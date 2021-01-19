@@ -49,7 +49,7 @@ async def get_url(paymentRequest: PaymentRequest):
 
     })
     storage[f"{transaction_id}"] = {"payment": initial_payment, "payment_status": False}
-    # print(storage)
+    print(storage)
     return initial_payment
 
 
@@ -57,7 +57,27 @@ async def get_url(paymentRequest: PaymentRequest):
 async def payment_status(paymentReq: PaymentStatusReq):
     # print(paymentReq)
     transaction_id = paymentReq.transactionId
-    initial_payment = storage[transaction_id]['payment']
+    transaction_record = storage.get(transaction_id)
+    print(transaction_record)
+    if transaction_record:
+        initial_payment = transaction_record['payment']
+    else:
+        initial_payment = None
+    print(initial_payment)
+
+    if not initial_payment:
+        return PaymentStatusResp(**{
+            "status": "Falied",
+            "responseCode": 19,  # anything else the thing has fallen so say transaction didn't go through
+            "responseMessage": "Invalid transaction id",
+            "payment": {
+                "responseCode": 19,
+                "responseMessage": "Invalid transaction id",
+                "status": "Failed"
+            }
+        })
+
+    # print(initial_payment['payment'])
     # print(storage[transaction_id])
     if storage[transaction_id]["payment_status"]:
         return PaymentStatusResp(**{

@@ -46,22 +46,22 @@ class ResponseData(BaseModel):
 
 
 class Payment(BaseModel):
-    applicationId: str
-    payeeId: str
-    serviceId: str
-    amount: int
-    currency: str
-    customerRef: str
-    tranTimestamp: str
+    applicationId: Optional[str]
+    payeeId: Optional[str]
+    serviceId: Optional[str]
+    amount: Optional[int]
+    currency: Optional[str]
+    customerRef: Optional[str]
+    tranTimestamp: Optional[str]
     paymentInfo: Optional[PaymentInfo]
-    responseData: ResponseData
-    responseCode: int
-    responseMessage: str
-    status: str
+    responseData: Optional[ResponseData]
+    responseCode: Optional[int]
+    responseMessage: Optional[str]
+    status: Optional[str]
 
 
 class PaymentStatusResp(BaseModel):
     status: str
     responseCode: int
     responseMessage: str
-    payment: Payment
+    payment: Optional[Payment]
