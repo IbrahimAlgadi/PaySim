@@ -2,7 +2,7 @@ from fastapi import FastAPI, Request
 # from fastapi.responses import HTMLResponse
 from fastapi.staticfiles import StaticFiles
 from fastapi.templating import Jinja2Templates
-from models import *
+from .models import *
 import datetime
 import uuid
 import requests
@@ -49,7 +49,7 @@ async def get_url(paymentRequest: PaymentRequest):
 
     })
     storage[f"{transaction_id}"] = {"payment": initial_payment, "payment_status": False}
-    print(storage)
+    # print(storage)
     return initial_payment
 
 
