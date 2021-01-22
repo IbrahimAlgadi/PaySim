@@ -1,6 +1,9 @@
 # PaySim
 
+![](https://travis-ci.org/IbrahimAlgadi/PaySim.svg?branch=main)
+
 > Opensource for payment gateway simulation
+
 
 **Description**:  There is a huge pain when linking with payment
 systems in Sudan, when you want to link you have to go physically
@@ -103,7 +106,11 @@ S_LOG_LEVEL = info # default info [critical|error|warning|info|debug|trace]
 
 ## How to test the software
 
-Testing instruction will be attached soon
+to test just run pytest
+
+```
+pytest
+```
 
 ## Known issues
 
