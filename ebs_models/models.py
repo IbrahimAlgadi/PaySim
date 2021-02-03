@@ -20,6 +20,9 @@ class TransactionInfo(BaseModel):
     transDateTime: str
     systemTraceAuditNumber: str
     tranCurrencyCode: str
+
+
+class TransactionAmountInfo(BaseModel):
     tranAmount: str
     additionalAmount: str
 
@@ -34,25 +37,25 @@ class TransactionStatusInfo(BaseModel):
 
 
 # Card
-class PurchaseSaleCardRequest(CardInfo, TransactionInfo):
+class PurchaseSaleCardRequest(CardInfo, TransactionInfo, TransactionAmountInfo):
     pass
 
 
-class PurchaseSaleCardResponse(TransactionInfo, TransactionStatusInfo):
+class PurchaseSaleCardResponse(TransactionInfo, TransactionAmountInfo, TransactionStatusInfo):
     PAN: str
 
 
 # Mobile
-class PurchaseSaleMobileWalletRequest(MobileInfo, TransactionInfo):
+class PurchaseSaleMobileWalletRequest(MobileInfo, TransactionInfo, TransactionAmountInfo):
     pass
 
 
-class PurchaseSaleMobileWalletResponse(TransactionInfo, TransactionStatusInfo):
+class PurchaseSaleMobileWalletResponse(TransactionInfo, TransactionStatusInfo, TransactionAmountInfo):
     mobileNumber: str
 
 
 # Cashback
-class PurchaseWithCashBackRequest(CardInfo, TransactionInfo):
+class PurchaseWithCashBackRequest(CardInfo, TransactionInfo, TransactionAmountInfo):
     cashBackAmount: str
 
 
@@ -61,7 +64,7 @@ class PurchaseWithCashBackResponse(PurchaseSaleCardResponse):
 
 
 # Reversal
-class ReversalRequest(TransactionInfo):
+class ReversalRequest(TransactionInfo, TransactionAmountInfo):
     PAN: str
     expDate: str
     originalTranSystemTraceAuditNumber: str
@@ -71,3 +74,5 @@ class ReversalRequest(TransactionInfo):
 class ReversalResponse(PurchaseSaleCardResponse):
     originalTranSystemTraceAuditNumber: str
     serviceId: str
+
+#
