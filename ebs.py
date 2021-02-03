@@ -100,3 +100,47 @@ async def reversal_url(purchase_cash_back_request: ReversalRequest):
         "originalTranSystemTraceAuditNumber": "string",
         "serviceId": "string"
     })
+
+
+@app.post("/mini_statement", response_model=MiniStatementResponse)
+async def mini_statement_url(purchase_cash_back_request: MiniStatementRequest):
+    print("Purchase Sale Request: ", purchase_cash_back_request)
+    return MiniStatementResponse(**{
+        "tranFee": "string",
+        "referenceNumber": "string",
+        "responseCode": "string",
+        "responseMessage": "string",
+        "responseStatus": "string",
+        "approvalCode": "string",
+        "tranAmount": "string",
+        "additionalAmount": "string",
+        "clientId": "string",
+        "terminalId": "string",
+        "transDateTime": "string",
+        "systemTraceAuditNumber": "string",
+        "tranCurrencyCode": "string",
+        "PAN": "string"
+    })
+
+
+@app.post("/bill_inquiry", response_model=BillInquiryResponse)
+async def bill_inquiry_url(purchase_cash_back_request: BillInquiryRequest):
+    print("Purchase Sale Request: ", purchase_cash_back_request)
+    return BillInquiryResponse(**{
+        "tranFee": "string",
+        "referenceNumber": "string",
+        "responseCode": "string",
+        "responseMessage": "string",
+        "responseStatus": "string",
+        "approvalCode": "string",
+        "tranAmount": "string",
+        "additionalAmount": "string",
+        "clientId": "string",
+        "terminalId": "string",
+        "transDateTime": "string",
+        "systemTraceAuditNumber": "string",
+        "tranCurrencyCode": "string",
+        "PAN": "string",
+        "personalPaymentInfo": "string",
+        "payeeId": "string"
+    })

@@ -75,4 +75,22 @@ class ReversalResponse(PurchaseSaleCardResponse):
     originalTranSystemTraceAuditNumber: str
     serviceId: str
 
-#
+
+# Mini Statement
+class MiniStatementRequest(CardInfo, TransactionInfo):
+    pass
+
+
+class MiniStatementResponse(PurchaseSaleCardResponse):
+    pass
+
+
+# Bill Payment
+class BillInquiryRequest(CardInfo, TransactionInfo):
+    personalPaymentInfo: str
+    payeeId: str
+
+
+class BillInquiryResponse(PurchaseSaleCardResponse):
+    personalPaymentInfo: str
+    payeeId: str
