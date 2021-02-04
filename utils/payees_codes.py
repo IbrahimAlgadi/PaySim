@@ -1,0 +1,15 @@
+PAYEES_CODES = (
+    ('0010010001', 'Zain Top Up'),
+    ('0010010002', 'Zain Bill payment'),
+    ('0010010003', 'MTN Top Up'),
+    ('0010010004', 'MTN Bill Payment'),
+    ('0010010005', 'Sudani Top Up'),
+    ('0010010006', 'Sudani Bill Payment'),
+    ('0010020001', 'NEC'),
+    ('0010030002', 'MOHE: Ministry of Higher Education (for normal Sudanese students)'),
+    ('0010030003', 'Customs'),
+    ('0010030004', 'MOHE Arab: For Sudanese students who had their examinations outside Sudan'),
+    ('0010030006', 'Ministry Of Finance (MOF) E15'),
+    ('0010050001', 'Government Payment (Generic Biller). Valid for (UC – 006)'),
+    ('0010040001', ' SADDID EXPRESS  Biller, SADDID service'),
+)
