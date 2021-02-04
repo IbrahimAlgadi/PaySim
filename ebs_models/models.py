@@ -1,5 +1,5 @@
 from pydantic import BaseModel
-from typing import Optional
+from typing import Optional, List
 
 
 # Payment Request
@@ -229,8 +229,12 @@ class PayeesListRequest(TransactionInfo):
     pass
 
 
+class Payee(BaseModel):
+    payeeName: str
+    payeeId: str
+
 class PayeesListResponse(TransactionInfo, TransactionStatusInfo):
-    payeesList: str
+    payeesList: List[Payee]
 
 
 #  Working Key Request

@@ -435,7 +435,20 @@ async def payees_list_url(request: PayeesListRequest):
         "transDateTime": "string",
         "systemTraceAuditNumber": "string",
         "tranCurrencyCode": "string",
-        "payeesList": "string"
+        "payeesList": [
+            {
+                "payeeName": "MTN Top Up3",
+                "payeeId": "0010010003"
+            },
+            {
+                "payeeName": "SUDANI Bill Payment",
+                "payeeId": "0010010006"
+            },
+            {
+                "payeeName": "Zain Bill Payment",
+                "payeeId": "0010010002"
+            }
+        ]
     })
 
 
