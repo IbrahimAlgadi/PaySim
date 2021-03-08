@@ -1,4 +1,4 @@
-# PaySim For Syber Pay
+# PaySim For Smart Node Payment System
 
 **Description**:  So when you try to work with Smart Node there is a specific 
 steps you have to go through, as specified by Smart Node Specifications Document 
