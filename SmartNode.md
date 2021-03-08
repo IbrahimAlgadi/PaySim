@@ -34,19 +34,28 @@ curl -X POST "http://localhost:5000/payment" -H  "accept: application/json" -H  
 In the PaySim the request will be like
 ![](./assets/Smart%20Node%201.PNG)
 
-3 - Then there will be a response from Smart Node having the payment status and
-the response based on Standard EBS response codes 
+3 - Then there will be a response from Smart Node in case of success it will give you
 
 ```
 
 {
-  "status": true,
-  "message": "Payment Created Successfully"
+  "status": true
 }
 
 ```
 In the Smart Node the response will be like
 ![](./assets/Smart%20Node%202.PNG)
+
+4 - The response is case of failure it will give you
+
+```
+
+{
+  "status": false,
+  "msg": "EBS Standard Error Messages"
+}
+
+```
 
 ### Easy Right
 
