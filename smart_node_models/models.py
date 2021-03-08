@@ -1,7 +1,7 @@
 from pydantic import BaseModel
 
 
-# from typing import Optional, List
+from typing import Optional, List
 
 
 # Payment Request
@@ -23,4 +23,4 @@ class PaymentRequest(AccessInfo, CardInfo):
 
 class PaymentResponse(BaseModel):
     status: bool
-    message: str
+    msg: Optional[str]

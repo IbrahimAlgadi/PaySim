@@ -20,16 +20,15 @@ async def purchase_card_url(payment_request: PaymentRequest):
     # print("Payment Request: ", payment_request)
     if payment_request.card == "2222222222222222":
         return PaymentResponse(**{
-            "status": True,
-            "message": "Payment Created Successfully"
+            "status": True
         })
     if payment_request.card == "4444444444444444":
         return PaymentResponse(**{
             "status": False,
-            "message": "No credit"
+            "msg": "No credit, Standard EBS Response"
         })
     else:
         return PaymentResponse(**{
             "status": False,
-            "message": "Stolen Card"
+            "msg": "Standard EBS Error Response"
         })
