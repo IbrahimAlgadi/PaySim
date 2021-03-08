@@ -68,14 +68,20 @@ Still cooking it, but for your record in the future it will
 be as simple as
 - for [SyberPay](https://www.syberpay.com/) checkout [PaySim SyberPay How To.](./SyberPay.md)
 ```
-python run.py syber
+python run.py
 
+```
+
+
+- for Smart Node Payment Gateway
+- for [SmartNode](https://smart-node.net/) checkout [PaySim Smart Node How To.](./SyberPay.md) 
+```
+python run_smart_node.py
 ```
 
 - for EBS
 ```
-python run.py ebs
-
+python run_ebs.py
 ```
 
 ## Usage
