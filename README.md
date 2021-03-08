@@ -74,7 +74,7 @@ python run.py
 
 
 - for Smart Node Payment Gateway
-- for [SmartNode](https://smart-node.net/) checkout [PaySim Smart Node How To.](./SyberPay.md) 
+- for [SmartNode](https://smart-node.net/) checkout [PaySim Smart Node How To.](./SmartNode.md) 
 ```
 python run_smart_node.py
 ```
